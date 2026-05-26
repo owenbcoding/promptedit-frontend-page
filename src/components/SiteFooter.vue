@@ -24,8 +24,8 @@ defineProps({
 
 <style scoped>
 .site-footer {
-  border-top: 1px solid var(--border);
-  background: #fafafa;
+  border-top: 1px solid var(--nav-border);
+  background: var(--nav-bg);
   padding-block: 2.5rem;
 }
 
@@ -45,7 +45,8 @@ defineProps({
 .site-footer__tagline {
   margin: 0;
   font-size: 0.875rem;
-  color: var(--text);
+  color: var(--nav-text);
+  opacity: 0.85;
 }
 
 .site-footer__links {
@@ -55,7 +56,7 @@ defineProps({
 
 .site-footer__links a {
   font-size: 0.875rem;
-  color: var(--text-h);
+  color: var(--nav-text);
   text-decoration: none;
 }
 
@@ -66,6 +67,7 @@ defineProps({
 .site-footer__copy {
   margin: 0.5rem 0 0;
   font-size: 0.8125rem;
-  color: var(--text);
+  color: var(--nav-text);
+  opacity: 0.7;
 }
 </style>
