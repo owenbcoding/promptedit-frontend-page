@@ -39,7 +39,11 @@ defineProps({
         </article>
       </div>
 
-      <p class="pricing__guarantee">{{ pricing.guarantee }}</p>
+      <aside v-if="pricing.guaranteeBlock" class="card pricing__guarantee">
+        <p class="pricing__guarantee-eyebrow">{{ pricing.guaranteeBlock.subheadline }}</p>
+        <h3 class="pricing__guarantee-title">{{ pricing.guaranteeBlock.headline }}</h3>
+        <p class="pricing__guarantee-details">{{ pricing.guaranteeBlock.details }}</p>
+      </aside>
     </div>
   </section>
 </template>
@@ -120,9 +124,34 @@ defineProps({
 }
 
 .pricing__guarantee {
-  margin: 1.5rem 0 0;
+  margin: 2rem auto 0;
+  max-width: 36rem;
   text-align: center;
-  font-size: 0.875rem;
+  border-color: var(--accent-border);
+  background: var(--accent-bg);
+}
+
+.pricing__guarantee-eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pricing__guarantee-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-h);
+}
+
+.pricing__guarantee-details {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
   color: var(--text);
 }
 
