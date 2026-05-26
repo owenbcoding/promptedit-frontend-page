@@ -265,7 +265,7 @@ export const site = {
   }
   
   export const footer = {
-    copyright: '© 2025 PromptEdit',
+    copyright: '© 2026 PromptEdit',
     links: [
       { label: 'Terms', href: '[EDIT]' },
       { label: 'Privacy', href: '[EDIT]' },
