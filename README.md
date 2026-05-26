@@ -5,11 +5,7 @@ A performant, conversion-focused sales page for [PromptEdit](https://promptedit.
 This is a frontend design challenge: reimagine PromptEdit’s landing experience with clearer messaging, stronger hierarchy, and a more intuitive path to joining the marketplace as a creator or buyer.
 
 ## Goal
-Sell joining the PromptEdit marketplace by answering, in order:
-- What PromptEdit is
-- Who it’s for (creators selling templates, buyers who need them)
-- Why join now (benefits, social proof, low friction)
-- What to do next (primary CTA)
+Create a sample page using https://www.contentcreator.com/prompt-edit as an example and create a performant sales page that sells joining our marketplace.
 
 ## Design decisions
 Brief bullets on what you improved vs. promptedit.com, for example:
