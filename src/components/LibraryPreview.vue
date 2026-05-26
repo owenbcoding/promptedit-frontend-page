@@ -80,6 +80,10 @@ const activeTab = ref(props.library.tabs[0]?.id ?? '')
   color: var(--accent);
 }
 
+.library__panel {
+  text-align: center;
+}
+
 .library__panel h3 {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
