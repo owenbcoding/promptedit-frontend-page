@@ -76,14 +76,16 @@ pnpm build    # outputs to dist/
 pnpm preview  # local production preview
 ```
 
-Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages.
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and publishes the `dist/` folder to the `gh-pages` branch.
 
 **One-time GitHub setup:**
 
-1. Repository → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions** (not “Deploy from a branch”)
-2. After pushing, open **Actions** → **Deploy to GitHub Pages** and confirm the workflow is green
+1. Repository → **Settings** → **Pages** → **Build and deployment**
+2. Source: **Deploy from a branch**
+3. Branch: **`gh-pages`** / **`/ (root)`**
+4. Save, then push to `master` or re-run the workflow under **Actions**
 
-If the live site is blank, GitHub is likely serving raw source files instead of the built `dist/` output. Switch Pages to **GitHub Actions** and re-run the deploy workflow.
+The workflow builds with Vite and deploys compiled assets — not raw source files. If you see a blank page, Pages is likely pointed at `master` instead of `gh-pages`.
 
 ## Project layout
 
