@@ -73,11 +73,20 @@ defineProps({
 
 .tool-category--wide .tool-category__grid {
   grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .tool-category--wide .tool-category__item {
+  width: fit-content;
+  max-width: 100%;
   align-items: center;
   text-align: center;
+}
+
+.tool-category--wide .tool-category__item strong,
+.tool-category--wide .tool-category__item span {
+  display: block;
+  max-width: 42ch;
 }
 
 .tool-category__item {
