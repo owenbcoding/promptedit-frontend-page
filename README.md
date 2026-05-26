@@ -17,7 +17,10 @@ Brief bullets on what you improved vs. promptedit.com, for example:
 - FAQ uses native `<details>` for zero JS and fast load
 
 ## WireFrame for mobile first
-- Figma link to mobile design : 
+- Figma link to mobile design 
+- [Figma — PromptEdit sales page wireframes](https://figma.com/file/...)
+- Mobile frame: 375px, all sections, trust above tools
+- Desktop: 1440px adaptation of same structure
 
 ## Tech stack
 - Hosting githubpages with vue so it can relate to the origonal job tech stack
