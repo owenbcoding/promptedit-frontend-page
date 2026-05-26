@@ -78,7 +78,12 @@ pnpm preview  # local production preview
 
 Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages.
 
-**One-time GitHub setup:** Repository → Settings → Pages → Source: **GitHub Actions**.
+**One-time GitHub setup:**
+
+1. Repository → **Settings** → **Pages** → **Build and deployment** → Source: **GitHub Actions** (not “Deploy from a branch”)
+2. After pushing, open **Actions** → **Deploy to GitHub Pages** and confirm the workflow is green
+
+If the live site is blank, GitHub is likely serving raw source files instead of the built `dist/` output. Switch Pages to **GitHub Actions** and re-run the deploy workflow.
 
 ## Project layout
 
