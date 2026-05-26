@@ -8,10 +8,8 @@ defineProps({
   <article class="tool-category" :class="{ 'tool-category--wide': category.layout === 'wide' }">
     <header class="tool-category__header">
       <span class="tool-category__icon" aria-hidden="true">{{ category.icon }}</span>
-      <div>
-        <h3>{{ category.title }}</h3>
-        <p>{{ category.subtitle }}</p>
-      </div>
+      <h3>{{ category.title }}</h3>
+      <p>{{ category.subtitle }}</p>
     </header>
 
     <ul class="tool-category__grid">
@@ -39,8 +37,10 @@ defineProps({
 
 .tool-category__header {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.375rem;
   margin-bottom: 1.25rem;
 }
 
@@ -50,7 +50,7 @@ defineProps({
 }
 
 .tool-category__header h3 {
-  margin: 0 0 0.25rem;
+  margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-h);
@@ -73,6 +73,11 @@ defineProps({
 
 .tool-category--wide .tool-category__grid {
   grid-template-columns: 1fr;
+}
+
+.tool-category--wide .tool-category__item {
+  align-items: center;
+  text-align: center;
 }
 
 .tool-category__item {
