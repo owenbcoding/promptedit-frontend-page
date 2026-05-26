@@ -9,11 +9,12 @@ Create a sample page using https://www.contentcreator.com/prompt-edit as an exam
 
 ## Design decisions
 Brief bullets on what you improved vs. promptedit.com, for example:
-- Clear hero with one primary CTA
-- Scannable benefits instead of dense copy
-- Trust signals (categories, examples, testimonials if you add them)
-- Mobile-first layout and readable typography
-- Fast load: minimal JS, optimized assets, no unnecessary dependencies
+- Moved trust stats + testimonials above tool sections (reference buries them)
+- One reusable tool-category component instead of four separate layouts
+- Reduced library deep-dives from 5 repeating blocks to 3 tabbed previews
+- Single primary CTA label ("Get Started") used consistently
+- Mobile-first: 2-col tool grids, stacked pricing, collapsible nav
+- FAQ uses native `<details>` for zero JS and fast load
 
 ## Tech stack
 - Hosting githubpages with vue so it can relate to the origonal job tech stack
