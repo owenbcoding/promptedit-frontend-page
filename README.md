@@ -76,7 +76,7 @@ pnpm build    # outputs to dist/
 pnpm preview  # local production preview
 ```
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages.
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages.
 
 **One-time GitHub setup:** Repository → Settings → Pages → Source: **GitHub Actions**.
 
