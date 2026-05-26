@@ -5,7 +5,7 @@ A performant, conversion-focused sales page for [PromptEdit](https://promptedit.
 Reimagined from the [reference landing page](https://www.contentcreator.com/prompt-edit) with clearer messaging, stronger hierarchy, and less repetitive scrolling.
 
 **Live demo:** Deploy to [Vercel](https://vercel.com) (see below) 
-
+- LIVE Demo : https://promptedit-frontend-page.vercel.app/
 
 ## Goal
 
