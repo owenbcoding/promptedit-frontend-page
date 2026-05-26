@@ -18,7 +18,7 @@ Brief bullets on what you improved vs. promptedit.com, for example:
 
 ## WireFrame for mobile first
 - Figma link to mobile design 
-- [Figma — PromptEdit sales page wireframes](https://figma.com/file/...)
+- [Figma — PromptEdit sales page wireframes](https://curry-coding-41440917.figma.site/)
 - Mobile frame: 375px, all sections, trust above tools
 - Desktop: 1440px adaptation of same structure
 
