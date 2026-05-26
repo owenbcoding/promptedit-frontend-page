@@ -4,7 +4,8 @@ A performant, conversion-focused sales page for [PromptEdit](https://promptedit.
 
 Reimagined from the [reference landing page](https://www.contentcreator.com/prompt-edit) with clearer messaging, stronger hierarchy, and less repetitive scrolling.
 
-**Live demo:** [owenbcoding.github.io/promptedit-frontend-page](https://owenbcoding.github.io/promptedit-frontend-page/)
+**Live demo:** Deploy to [Vercel](https://vercel.com) (see below) 
+
 
 ## Goal
 
@@ -58,7 +59,7 @@ Improvements vs. the [reference page](https://www.contentcreator.com/prompt-edit
 - Tailwind CSS 4 (utility layer via `@tailwindcss/vite`)
 - Scoped component CSS + CSS custom properties for theming
 - Content driven from `src/data/content.js`
-- Deployed to GitHub Pages via GitHub Actions
+- Deployed to Vercel
 
 ## Getting started
 
@@ -67,25 +68,36 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:5173/promptedit-frontend-page/](http://localhost:5173/promptedit-frontend-page/) after starting the dev server (base path matches production).
+Open [http://localhost:5173](http://localhost:5173) after starting the dev server.
 
-## Build & deploy
+## Build & deploy (Vercel)
 
 ```bash
 pnpm build    # outputs to dist/
 pnpm preview  # local production preview
 ```
 
-Pushing to `master` triggers `.github/workflows/deploy.yml`, which builds the site and publishes the `dist/` folder to the `gh-pages` branch.
+### Option A — Vercel dashboard (recommended)
 
-**One-time GitHub setup:**
+1. Push this repo to GitHub
+2. Go to [vercel.com/new](https://vercel.com/new) and import the repository
+3. Vercel auto-detects Vite — no env vars needed
+4. **Install command:** `pnpm install`
+5. **Build command:** `pnpm build`
+6. **Output directory:** `dist`
+7. Deploy
 
-1. Repository → **Settings** → **Pages** → **Build and deployment**
-2. Source: **Deploy from a branch**
-3. Branch: **`gh-pages`** / **`/ (root)`**
-4. Save, then push to `master` or re-run the workflow under **Actions**
+Every push to `master` triggers a new production deploy.
 
-The workflow builds with Vite and deploys compiled assets — not raw source files. If you see a blank page, Pages is likely pointed at `master` instead of `gh-pages`.
+### Option B — Vercel CLI
+
+```bash
+pnpm add -g vercel
+vercel          # first deploy (follow prompts)
+vercel --prod   # production deploy
+```
+
+`vercel.json` in the repo root configures the build and SPA routing.
 
 ## Project layout
 
